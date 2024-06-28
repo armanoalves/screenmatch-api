@@ -26,4 +26,15 @@ Projeto desenvolvido no terceiro curso da formação Avançando com Java da Alur
 - Organizar um projeto MVC. Aprendemos como estruturar o projeto em várias camadas e como conectá-las.
 
 - Retornar uma informação no navegador. Criamos nosso primeiro controller e nossa primeira rota da API, utilizando anotações como `@RestController` e `@GetMapping`.
-- 
+
+### Aula 02
+
+- Devolver os dados do nosso banco para o navegador. Trabalhamos devolvendo os dados do nosso banco no Controller, devidamente serializados.
+
+- Tratar serialização circular. Vimos os problemas que ocorrem ao tentar serializar entidades mapeadas de forma bidirecional e como resolvê-los.
+
+- Utilizar o padrão DTO. Para evitar a serialização circular e principalmente para seguir boas práticas, criamos nossos DTOs. Assim, nossos dados ficaram mais seguros e foram devolvidos de forma personalizada.
+
+- Lidar com o erro de CORS. Conhecemos o erro entre a comunicação entre rotas de origens diferentes e pudemos tratá-lo, criando a classe `CorsConfiguration`.
+
+- Configurar o Live Reload. Para que a aplicação não precise ser parada e reinicializada sempre que houver mudanças, usamos o Devtools e mudamos as configurações necessárias no Intellij.
