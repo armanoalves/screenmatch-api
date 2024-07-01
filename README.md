@@ -25,7 +25,7 @@ Projeto desenvolvido no terceiro curso da formação Avançando com Java da Alur
 
 - Organizar um projeto MVC. Aprendemos como estruturar o projeto em várias camadas e como conectá-las.
 
-- Retornar uma informação no navegador. Criamos nosso primeiro controller e nossa primeira rota da API, utilizando anotações como `@RestController` e `@GetMapping`.
+- Retornar uma informação no navegador. Criação do primeiro controller e a primeira rota da API, utilizando anotações como `@RestController` e `@GetMapping`.
 
 ### Aula 02
 
@@ -33,8 +33,18 @@ Projeto desenvolvido no terceiro curso da formação Avançando com Java da Alur
 
 - Tratar serialização circular. Vimos os problemas que ocorrem ao tentar serializar entidades mapeadas de forma bidirecional e como resolvê-los.
 
-- Utilizar o padrão DTO. Para evitar a serialização circular e principalmente para seguir boas práticas, criamos nossos DTOs. Assim, nossos dados ficaram mais seguros e foram devolvidos de forma personalizada.
+- Utilizar o padrão DTO. Para evitar a serialização circular e principalmente para seguir boas práticas, criação dos DTOs. Assim, nossos dados ficaram mais seguros e foram devolvidos de forma personalizada.
 
 - Lidar com o erro de CORS. Conhecemos o erro entre a comunicação entre rotas de origens diferentes e pudemos tratá-lo, criando a classe `CorsConfiguration`.
 
 - Configurar o Live Reload. Para que a aplicação não precise ser parada e reinicializada sempre que houver mudanças, usamos o Devtools e mudamos as configurações necessárias no Intellij.
+
+### Aula 03
+
+- Deixar o código mais limpo e organizado. Vimos que a única responsabilidade de um controlador é tratar da comunicação e das rotas da API. Assim, ele não deve conter regras de negócio. E para fazer essa divisão, criamos uma classe de serviços, a SerieService. 
+
+- Utilizar boas práticas de extração de métodos Aplicamos princípios da orientação a objetos, extraindo métodos que eram comuns no código, facilitando a manutenção.
+
+- Criar uma url fixa para o Controller. Usamos o `@RequestMapping` para que todas as urls mapeadas pelo controlador de séries tenham como prefixo o “/series”.
+
+- Retornar os dados de uma única série. Para buscar uma série, precisamos que o seu id seja passado como parâmetro. Conhecemos o `@PathVariable`, que nos auxilia nesse objetivo.
